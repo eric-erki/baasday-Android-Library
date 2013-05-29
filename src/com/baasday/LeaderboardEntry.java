@@ -23,12 +23,12 @@ public class LeaderboardEntry extends BaasdayObject {
         return this.getInt("_order");
     }
 
-    private static String leaderboardPath(final String leaderboardName) {
+    private static String leaderboardAPIPath(final String leaderboardName) {
         return "leaderboards/" + leaderboardName;
     }
 
     private static String apiPath(final String leaderboardName, final String id) {
-        return leaderboardPath(leaderboardName) + "/" + id;
+        return leaderboardAPIPath(leaderboardName) + "/" + id;
     }
 
     String apiPath() throws BaasdayException {
@@ -48,7 +48,7 @@ public class LeaderboardEntry extends BaasdayObject {
     }
 
     public static LeaderboardEntry create(final String leaderboardName, final Map<String, Object> values) throws BaasdayException {
-        return APIClient.create(leaderboardPath(leaderboardName), values, new LeaderboardEntryFactory(leaderboardName));
+        return APIClient.create(leaderboardAPIPath(leaderboardName), values, new LeaderboardEntryFactory(leaderboardName));
     }
 
     public static LeaderboardEntry create(final String leaderboardName, final int score, final Map<String, Object> values) throws BaasdayException {
@@ -66,7 +66,7 @@ public class LeaderboardEntry extends BaasdayObject {
     }
 
     public static ListResult<LeaderboardEntry> fetchAll(final String leaderboardName, final Query query) throws BaasdayException {
-        return APIClient.fetchAll(leaderboardPath(leaderboardName), query, new LeaderboardEntryFactory(leaderboardName));
+        return APIClient.fetchAll(leaderboardAPIPath(leaderboardName), query, new LeaderboardEntryFactory(leaderboardName));
     }
 
     public static ListResult<LeaderboardEntry> fetchAll(final String leaderboardName) throws BaasdayException {
