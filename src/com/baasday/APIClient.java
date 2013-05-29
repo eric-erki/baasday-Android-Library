@@ -13,7 +13,7 @@ import java.util.Map;
 class APIClient {
     private String requestMethod;
     private String path;
-    private Map<String, Object> queryParameters;
+    private Map<String, Object> requestParameters;
     private Map<String, Object> requestJson;
 
     APIClient requestMethod(final String requestMethod) {
@@ -26,13 +26,13 @@ class APIClient {
         return this;
     }
 
-    APIClient queryParameters(final Map<String, Object> query) {
-        this.queryParameters = query;
+    APIClient requestParameters(final Map<String, Object> query) {
+        this.requestParameters = query;
         return this;
     }
 
     APIClient query(final Query query) {
-        return this.queryParameters(query == null ? null : query.toQueryParameters());
+        return this.requestParameters(query == null ? null : query.toRequestParameters());
     }
 
     APIClient requestJson(final Map<String, Object> requestJson) {
@@ -76,8 +76,8 @@ class APIClient {
 
     HttpURLConnection createConnection() throws BaasdayException {
         String path;
-        if (this.queryParameters != null) {
-            path = this.path + "?" + queryString(this.queryParameters);
+        if (this.requestParameters != null) {
+            path = this.path + "?" + queryString(this.requestParameters);
         } else {
             path = this.path;
         }

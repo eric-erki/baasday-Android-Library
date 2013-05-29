@@ -150,13 +150,13 @@ public class Query {
         return stringBuilder.toString();
     }
 
-    Map<String, Object> toQueryParameters() {
-        final Map<String, Object> queryParameters = new HashMap<String, Object>();
-        if (this.hasFilter()) queryParameters.put("filter", Utility.jsonString(this.getFilter()));
-        if (this.hasOrder()) queryParameters.put("order", orderString(this.getOrder()));
-        if (this.hasSkip()) queryParameters.put("skip", this.getSkip());
-        if (this.hasLimit()) queryParameters.put("limit", this.getLimit());
-        if (this.hasWait()) queryParameters.put("wait", this.getWait());
-        return queryParameters;
+    Map<String, Object> toRequestParameters() {
+        final Map<String, Object> requestParameters = new HashMap<String, Object>();
+        if (this.hasFilter()) requestParameters.put("filter", Utility.jsonString(this.getFilter()));
+        if (this.hasOrder()) requestParameters.put("order", orderString(this.getOrder()));
+        if (this.hasSkip()) requestParameters.put("skip", this.getSkip());
+        if (this.hasLimit()) requestParameters.put("limit", this.getLimit());
+        if (this.hasWait()) requestParameters.put("wait", this.getWait());
+        return requestParameters;
     }
 }
