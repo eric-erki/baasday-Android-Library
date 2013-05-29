@@ -1,6 +1,7 @@
 package com.baasday;
 
 public class Baasday {
+    static final String API_URL_ROOT = "http://baasday.com/api/";
     private static final String version = "0.5";
 
     private static String applicationId;
