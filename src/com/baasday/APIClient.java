@@ -86,6 +86,7 @@ class APIClient {
             setAuthenticationHeaders(connection);
             connection.setRequestMethod(this.requestMethod);
             if (this.requestJson != null) {
+                connection.setRequestProperty("Content-Type", "application/json");
                 connection.getOutputStream().write(Utility.jsonString(this.requestJson).getBytes());
             }
             return connection;
