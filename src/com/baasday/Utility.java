@@ -10,10 +10,19 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.*;
 
-class Utility {
+final class Utility {
+    private Utility() {
+    }
+
     static void copy(final InputStream from, final OutputStream to) throws IOException {
         final byte[] buffer = new byte[1024];
         while (from.read(buffer) != -1) to.write(buffer);
+    }
+
+    static <K, V> Map<K, V> singleEntryMap(final K key, final V value) {
+        final Map<K, V> result = new HashMap<K, V>();
+        result.put(key, value);
+        return result;
     }
 
     private static Object fixObjectForJSON(final Object object) {
