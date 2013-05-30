@@ -15,7 +15,7 @@ public class Item extends BaasdayObject {
     }
 
     private static String collectionAPIPath(final String collectionName) {
-        return "objects/" + collectionName;
+        return "items/" + collectionName;
     }
 
     private static String apiPath(final String collectionName, final String id) {
