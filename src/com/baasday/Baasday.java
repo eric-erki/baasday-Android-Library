@@ -7,12 +7,13 @@ package com.baasday;
  * @see AuthenticatedUser
  */
 public final class Baasday {
-    static final String API_URL_ROOT = "http://baasday.com/api/";
+    private static final String API_URL_ROOT = "https://baasday.com/api/";
     private static final String version = "0.5";
 
     private static String applicationId;
     private static String apiKey;
     private static String userAuthenticationKey;
+    private static String apiURLRoot = API_URL_ROOT;
 
     private Baasday() {
     }
@@ -50,5 +51,21 @@ public final class Baasday {
 
     static String getVersion() {
         return Baasday.version;
+    }
+
+    /**
+     * <p>baasday Web APIのURLを返します。</p>
+     * @return baasday Web APIのURL
+     */
+    public static String getApiURLRoot() {
+        return apiURLRoot;
+    }
+
+    /**
+     * <p>baasday Web APIのURLを設定します。通常は変更する必要はありません。</p>
+     * @param apiURLRoot baasday Web APIのURL
+     */
+    public static void setApiUrlRoot(final String apiURLRoot) {
+        Baasday.apiURLRoot = apiURLRoot;
     }
 }

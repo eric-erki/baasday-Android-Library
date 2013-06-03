@@ -82,7 +82,7 @@ class APIClient {
             path = this.path;
         }
         try {
-            final HttpURLConnection connection = (HttpURLConnection) new URL(Baasday.API_URL_ROOT + path).openConnection();
+            final HttpURLConnection connection = (HttpURLConnection) new URL(Baasday.getApiURLRoot() + path).openConnection();
             setAuthenticationHeaders(connection);
             connection.setRequestMethod(this.requestMethod);
             if (this.requestJson != null) {
