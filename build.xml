@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="baasday-android-library" default="all">
+  
+  
+  <property file="baasday.properties"/>
+  <!-- Uncomment the following property if no tests compilation is needed -->
+  <!-- 
+  <property name="skip.tests" value="true"/>
+   -->
+  
+  <!-- Compiler options -->
+  
+  <property name="compiler.debug" value="on"/>
+  <property name="compiler.generate.no.warnings" value="off"/>
+  <property name="compiler.args" value=""/>
+  <property name="compiler.max.memory" value="128m"/>
+  <patternset id="ignored.files">
+    <exclude name="**/.DS_Store/**"/>
+    <exclude name="**/.git/**"/>
+    <exclude name="**/*.hprof/**"/>
+    <exclude name="**/*.lib/**"/>
+    <exclude name="**/*~/**"/>
+    <exclude name="**/__pycache__/**"/>
+    <exclude name="**/.bundle/**"/>
+    <exclude name="**/*.rbc/**"/>
+  </patternset>
+  <patternset id="library.patterns">
+    <include name="*.zip"/>
+    <include name="*.apk"/>
+    <include name="*.war"/>
+    <include name="*.egg"/>
+    <include name="*.ear"/>
+    <include name="*.ane"/>
+    <include name="*.swc"/>
+    <include name="*.jar"/>
+  </patternset>
+  <patternset id="compiler.resources">
+    <exclude name="**/?*.java"/>
+    <exclude name="**/?*.form"/>
+    <exclude name="**/?*.class"/>
+    <exclude name="**/?*.clj"/>
+  </patternset>
+  
+  <!-- JDK definitions -->
+
+  <property name="jdk.bin.android_2.3.3_platform" value="../android-sdk"/>
+
+  <available file="${jdk.bin.android_2.3.3_platform}" type="dir" property="isFileAvail" />
+  <fail unless="isFileAvail"
+	message="The android jdk bin directory does not exist" />
+
+  <path id="jdk.classpath.android_2.3.3_platform">
+    <fileset dir="${jdk.home.android_2.3.3_platform}">
+      <include name="platforms/android-10/android.jar"/>
+      <include name="platforms/android-10/data/res"/>
+      <include name="tools/support/annotations.jar"/>
+    </fileset>
+  </path>
+  
+  <property name="project.jdk.home" value="${jdk.home.android_2.3.3_platform}"/>
+  <property name="project.jdk.classpath" value="jdk.classpath.android_2.3.3_platform"/>
+  
+  <!-- Modules -->
+  
+  
+  <!-- Module baasday-Android-Library -->
+  
+  <dirname property="module.baasday-android-library.basedir" file="${ant.file}"/>
+  
+  
+  <property name="module.jdk.home.baasday-android-library" value="${project.jdk.home}"/>
+  <property name="module.jdk.classpath.baasday-android-library" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.baasday-android-library" value="${compiler.args}"/>
+  
+  <property name="baasday-android-library.output.dir" value="${module.baasday-android-library.basedir}/out"/>
+  <property name="baasday-android-library.testoutput.dir" value="${module.baasday-android-library.basedir}/out"/>
+  
+  <path id="baasday-android-library.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="baasday-android-library.module.production.classpath">
+    <path refid="${module.jdk.classpath.baasday-android-library}"/>
+  </path>
+  
+  <path id="baasday-android-library.runtime.production.module.classpath">
+    <pathelement location="${baasday-android-library.output.dir}"/>
+  </path>
+  
+  <path id="baasday-android-library.module.classpath">
+    <path refid="${module.jdk.classpath.baasday-android-library}"/>
+    <pathelement location="${baasday-android-library.output.dir}"/>
+  </path>
+  
+  <path id="baasday-android-library.runtime.module.classpath">
+    <pathelement location="${baasday-android-library.testoutput.dir}"/>
+    <pathelement location="${baasday-android-library.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.baasday-android-library">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.baasday-android-library">
+    <patternset refid="excluded.from.module.baasday-android-library"/>
+  </patternset>
+  
+  <path id="baasday-android-library.module.sourcepath">
+    <dirset dir="${module.baasday-android-library.basedir}/">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.baasday-android-library" depends="compile.module.baasday-android-library.production,compile.module.baasday-android-library.tests" description="Compile module baasday-Android-Library"/>
+  
+  <target name="compile.module.baasday-android-library.production" description="Compile module baasday-Android-Library; production classes">
+    <mkdir dir="${baasday-android-library.output.dir}"/>
+    <javac destdir="${baasday-android-library.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" includeantruntime="false">
+      <compilerarg line="${compiler.args.baasday-android-library}"/>
+      <compilerarg value="-Xlint:deprecation" />
+      <compilerarg value="-Xlint:unchecked" />
+
+      <bootclasspath refid="baasday-android-library.module.bootclasspath"/>
+      <classpath refid="baasday-android-library.module.production.classpath"/>
+      <src refid="baasday-android-library.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.baasday-android-library"/>
+    </javac>
+
+    <copy todir="${baasday-android-library.output.dir}">
+      <fileset dir="${module.baasday-android-library.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+
+  <target name="compile.module.baasday-android-library.tests" depends="compile.module.baasday-android-library.production" description="compile module baasday-Android-Library; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.baasday-android-library" description="cleanup module">
+    <delete dir="${baasday-android-library.output.dir}"/>
+    <delete dir="${baasday-android-library.testoutput.dir}"/>
+  </target>
+  
+  <target name="init" description="Build initialization">
+    <!-- Perform any build initialization in this target -->
+  </target>
+  
+  <target name="clean" depends="clean.module.baasday-android-library" description="cleanup all"/>
+  
+  <target name="build.modules" depends="init, clean, compile.module.baasday-android-library" description="build all modules"/>
+  
+  <target name="init.artifacts">
+    <property name="artifacts.temp.dir" value="${basedir}/__artifacts_temp"/>
+    <property name="artifact.output.baasday:jar" value="${basedir}/out"/>
+    <mkdir dir="${artifacts.temp.dir}"/>
+    <property name="temp.jar.path.baasday-Android-Library.jar" value="${artifacts.temp.dir}/baasday.jar"/>
+  </target>
+  
+  <target name="jar" depends="init.artifacts, compile.module.baasday-android-library" description="Build &#39;baasday:jar&#39; artifact">
+    <property name="artifact.temp.output.baasday:jar" value="${artifacts.temp.dir}/baasday_jar"/>
+    <mkdir dir="${artifact.temp.output.baasday:jar}"/>
+    <jar destfile="${temp.jar.path.baasday-Android-Library.jar}" duplicate="preserve" filesetmanifest="mergewithoutmain">
+      <zipfileset dir="${baasday-android-library.output.dir}"/>
+    </jar>
+    <copy file="${temp.jar.path.baasday-Android-Library.jar}" tofile="${artifact.temp.output.baasday:jar}/baasday-${baasday.version}.jar"/>
+  </target>
+  
+  <target name="build.all.artifacts" depends="jar" description="Build all artifacts">
+    <mkdir dir="${artifact.output.baasday:jar}"/>
+    <copy todir="${artifact.output.baasday:jar}">
+      <fileset dir="${artifact.temp.output.baasday:jar}"/>
+    </copy>
+    
+    <!-- Delete temporary files -->
+    <delete dir="${artifacts.temp.dir}"/>
+  </target>
+  
+  <target name="all" depends="build.modules, build.all.artifacts" description="build all"/>
+</project>
