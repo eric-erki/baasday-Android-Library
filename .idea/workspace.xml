@@ -1,35 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="75ad80c9-b815-47c6-b8a4-d6a6f188df97" name="Default" comment="Rename the method `leaderboardPath` to `leaderboardAPIPath` on the class `LeaderboardEntry`" />
+    <list default="true" id="75ad80c9-b815-47c6-b8a4-d6a6f188df97" name="Default" comment="Rename the method `leaderboardPath` to `leaderboardAPIPath` on the class `LeaderboardEntry`">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/baasday/Device.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/baasday/BaasdayObject.java" afterPath="$PROJECT_DIR$/src/com/baasday/BasicObject.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/baasday/AuthenticatedUser.java" afterPath="$PROJECT_DIR$/src/com/baasday/AuthenticatedUser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/baasday/Baasday.java" afterPath="$PROJECT_DIR$/src/com/baasday/Baasday.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/baasday/BaasdayObject.java" afterPath="$PROJECT_DIR$/src/com/baasday/BaasdayObject.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/baasday/Utility.java" afterPath="$PROJECT_DIR$/src/com/baasday/Utility.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="baasday.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/BasicObject.java" changelist="75ad80c9-b815-47c6-b8a4-d6a6f188df97" time="1369794205896" ignored="false" />
-    <file path="/Baasday.java" changelist="75ad80c9-b815-47c6-b8a4-d6a6f188df97" time="1370233697860" ignored="false" />
-    <file path="/Dummy.txt" changelist="75ad80c9-b815-47c6-b8a4-d6a6f188df97" time="1371113174271" ignored="false" />
+    <file path="/BasicObject.java" changelist="75ad80c9-b815-47c6-b8a4-d6a6f188df97" time="1372232940976" ignored="false" />
+    <file path="/Baasday.java" changelist="75ad80c9-b815-47c6-b8a4-d6a6f188df97" time="1372232384056" ignored="false" />
+    <file path="/Dummy.txt" changelist="75ad80c9-b815-47c6-b8a4-d6a6f188df97" time="1372243075079" ignored="false" />
     <file path="/User.java" changelist="75ad80c9-b815-47c6-b8a4-d6a6f188df97" time="1369914592328" ignored="false" />
     <file path="/Item.java" changelist="75ad80c9-b815-47c6-b8a4-d6a6f188df97" time="1369911700313" ignored="false" />
     <file path="/LeaderboardEntry.java" changelist="75ad80c9-b815-47c6-b8a4-d6a6f188df97" time="1369914115863" ignored="false" />
-    <file path="/BaasdayObject.java" changelist="75ad80c9-b815-47c6-b8a4-d6a6f188df97" time="1369914094320" ignored="false" />
+    <file path="/BaasdayObject.java" changelist="75ad80c9-b815-47c6-b8a4-d6a6f188df97" time="1372232276713" ignored="false" />
     <file path="/APIClient.java" changelist="75ad80c9-b815-47c6-b8a4-d6a6f188df97" time="1370239560120" ignored="false" />
     <file path="/BaasdayRuntimeException.java" changelist="75ad80c9-b815-47c6-b8a4-d6a6f188df97" time="1369804591578" ignored="false" />
-    <file path="/Utility.java" changelist="75ad80c9-b815-47c6-b8a4-d6a6f188df97" time="1369914398843" ignored="false" />
+    <file path="/Utility.java" changelist="75ad80c9-b815-47c6-b8a4-d6a6f188df97" time="1372242772019" ignored="false" />
     <file path="/BaasdayException.java" changelist="75ad80c9-b815-47c6-b8a4-d6a6f188df97" time="1369895984122" ignored="false" />
-    <file path="/fragment.java" changelist="75ad80c9-b815-47c6-b8a4-d6a6f188df97" time="1369814213497" ignored="false" />
+    <file path="/fragment.java" changelist="75ad80c9-b815-47c6-b8a4-d6a6f188df97" time="1372241670069" ignored="false" />
     <file path="/ListResult.java" changelist="75ad80c9-b815-47c6-b8a4-d6a6f188df97" time="1369902867422" ignored="false" />
     <file path="/Foo.java" changelist="75ad80c9-b815-47c6-b8a4-d6a6f188df97" time="1369817213066" ignored="false" />
     <file path="/Query.java" changelist="75ad80c9-b815-47c6-b8a4-d6a6f188df97" time="1369914946444" ignored="false" />
-    <file path="/AuthenticatedUser.java" changelist="75ad80c9-b815-47c6-b8a4-d6a6f188df97" time="1369914601412" ignored="false" />
+    <file path="/AuthenticatedUser.java" changelist="75ad80c9-b815-47c6-b8a4-d6a6f188df97" time="1372233732384" ignored="false" />
     <file path="/UpdateOperation.java" changelist="75ad80c9-b815-47c6-b8a4-d6a6f188df97" time="1369905715423" ignored="false" />
     <file path="/UpdateOperations.java" changelist="75ad80c9-b815-47c6-b8a4-d6a6f188df97" time="1369915072406" ignored="false" />
     <file path="/DeletableObject.java" changelist="75ad80c9-b815-47c6-b8a4-d6a6f188df97" time="1369913877860" ignored="false" />
     <file path="/UpdatableObject.java" changelist="75ad80c9-b815-47c6-b8a4-d6a6f188df97" time="1369913914992" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="75ad80c9-b815-47c6-b8a4-d6a6f188df97" time="1370883201743" ignored="false" />
     <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/XMLSchema.xsd" changelist="75ad80c9-b815-47c6-b8a4-d6a6f188df97" time="1370934492448" ignored="false" />
     <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/xhtml1-transitional.xsd" changelist="75ad80c9-b815-47c6-b8a4-d6a6f188df97" time="1370934492448" ignored="false" />
     <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/relaxng.rng" changelist="75ad80c9-b815-47c6-b8a4-d6a6f188df97" time="1370934492448" ignored="false" />
     <file path="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven.jar!/schemas/maven-4.0.0.xsd" changelist="75ad80c9-b815-47c6-b8a4-d6a6f188df97" time="1370934492448" ignored="false" />
     <file path="$APPLICATION_HOME_DIR$/plugins/xpath/lib/xpath.jar!/org/intellij/lang/xpath/xslt/resources/documentation.xml" changelist="75ad80c9-b815-47c6-b8a4-d6a6f188df97" time="1370934492448" ignored="false" />
+    <file path="$PROJECT_DIR$/../baasday-Android-push-notification-sample/.idea/workspace.xml" changelist="75ad80c9-b815-47c6-b8a4-d6a6f188df97" time="1372231004564" ignored="false" />
+    <file path="/Device.java" changelist="75ad80c9-b815-47c6-b8a4-d6a6f188df97" time="1372233057146" ignored="false" />
+    <file path="$PROJECT_DIR$/../baasday-Android-push-notification-sample/src/com/example/baasday_Android_push_notification_sample/MyActivity.java" changelist="75ad80c9-b815-47c6-b8a4-d6a6f188df97" time="1372243205493" ignored="false" />
+    <file path="/MyActivity.java" changelist="75ad80c9-b815-47c6-b8a4-d6a6f188df97" time="1372243204829" ignored="false" />
+    <file path="$PROJECT_DIR$/../baasday-Android-push-notification-sample/gen/com/example/baasday_Android_push_notification_sample/BuildConfig.java" changelist="75ad80c9-b815-47c6-b8a4-d6a6f188df97" time="1372243269040" ignored="false" />
+    <file path="$PROJECT_DIR$/../baasday-Android-push-notification-sample/AndroidManifest.xml" changelist="75ad80c9-b815-47c6-b8a4-d6a6f188df97" time="1372243263833" ignored="false" />
+    <file path="$PROJECT_DIR$/../baasday-Android-push-notification-sample/gen/com/example/baasday_Android_push_notification_sample/Manifest.java" changelist="75ad80c9-b815-47c6-b8a4-d6a6f188df97" time="1372243266380" ignored="false" />
+    <file path="/AndroidManifest.xml" changelist="75ad80c9-b815-47c6-b8a4-d6a6f188df97" time="1372242274019" ignored="false" />
+    <file path="$PROJECT_DIR$/../baasday-Android-push-notification-sample/src/com/example/baasday_Android_push_notification_sample/MyReceiver.java" changelist="75ad80c9-b815-47c6-b8a4-d6a6f188df97" time="1372237328140" ignored="false" />
+    <file path="$PROJECT_DIR$/../baasday-Android-push-notification-sample/project.properties" changelist="75ad80c9-b815-47c6-b8a4-d6a6f188df97" time="1372239953348" ignored="false" />
+    <file path="$PROJECT_DIR$/../baasday-Android-push-notification-sample/src/com/example/baasday_Android_push_notification_sample/GCMIntentService.java" changelist="75ad80c9-b815-47c6-b8a4-d6a6f188df97" time="1372244131398" ignored="false" />
+    <file path="$PROJECT_DIR$/../baasday-Android-push-notification-sample/src/com/example/baasday_Android_push_notification_sample/Utility.java" changelist="75ad80c9-b815-47c6-b8a4-d6a6f188df97" time="1372242775846" ignored="false" />
+    <file path="/GCMIntentService.java" changelist="75ad80c9-b815-47c6-b8a4-d6a6f188df97" time="1372244118882" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,24 +111,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="UpdateOperations.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/baasday/UpdateOperations.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="443" selection-end="443" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="APIClient.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/baasday/APIClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="59" selection-start="2242" selection-end="2242" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Item.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/baasday/Item.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -126,19 +129,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LeaderboardEntry.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/baasday/LeaderboardEntry.java">
+      <file leaf-file-name="BaasdayObject.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/baasday/BaasdayObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="128" column="43" selection-start="4683" selection-end="4683" vertical-scroll-proportion="0.0">
+            <state line="50" column="91" selection-start="1479" selection-end="1479" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaasdayObject.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/baasday/BaasdayObject.java">
+      <file leaf-file-name="BasicObject.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/baasday/BasicObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="154" column="8" selection-start="5066" selection-end="5066" vertical-scroll-proportion="0.0">
+            <state line="140" column="39" selection-start="4409" selection-end="4409" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -156,25 +159,50 @@
       <file leaf-file-name="Baasday.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/baasday/Baasday.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="5" selection-start="1010" selection-end="1010" vertical-scroll-proportion="0.0">
+            <state line="59" column="0" selection-start="1668" selection-end="1668" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Query.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/baasday/Query.java">
+      <file leaf-file-name="APIClient.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/baasday/APIClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="447" column="20" selection-start="11890" selection-end="11890" vertical-scroll-proportion="0.0">
+            <state line="69" column="59" selection-start="2242" selection-end="2242" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AuthenticatedUser.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Utility.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/baasday/Utility.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="61" column="51" selection-start="2277" selection-end="2277" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#618#624#0" expanded="true" />
+                <element signature="e#1417#1425#0" expanded="true" />
+                <element signature="e#1841#1857#0" expanded="true" />
+                <element signature="e#3242#3258#0" expanded="true" />
+                <element signature="e#3922#3930#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AuthenticatedUser.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/baasday/AuthenticatedUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="27" selection-start="2568" selection-end="2568" vertical-scroll-proportion="0.67899406">
+            <state line="104" column="74" selection-start="3911" selection-end="3911" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Device.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/baasday/Device.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="28" selection-start="261" selection-end="261" vertical-scroll-proportion="0.21770681">
               <folding />
             </state>
           </provider>
@@ -198,28 +226,28 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/baasday/BaasdayException.java" />
-        <option value="$PROJECT_DIR$/src/com/baasday/UpdateOperation.java" />
         <option value="$PROJECT_DIR$/src/com/baasday/ListResult.java" />
         <option value="$PROJECT_DIR$/src/com/baasday/Item.java" />
         <option value="$PROJECT_DIR$/src/com/baasday/DeletableObject.java" />
         <option value="$PROJECT_DIR$/src/com/baasday/UpdatableObject.java" />
-        <option value="$PROJECT_DIR$/src/com/baasday/BaasdayObject.java" />
         <option value="$PROJECT_DIR$/src/com/baasday/LeaderboardEntry.java" />
-        <option value="$PROJECT_DIR$/src/com/baasday/Utility.java" />
         <option value="$PROJECT_DIR$/src/com/baasday/User.java" />
-        <option value="$PROJECT_DIR$/src/com/baasday/AuthenticatedUser.java" />
         <option value="$PROJECT_DIR$/src/com/baasday/UpdateOperations.java" />
-        <option value="$PROJECT_DIR$/src/com/baasday/Baasday.java" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/com/baasday/APIClient.java" />
         <option value="$PROJECT_DIR$/src/com/baasday/Query.java" />
+        <option value="$PROJECT_DIR$/src/com/baasday/BaasdayObject.java" />
+        <option value="$PROJECT_DIR$/src/com/baasday/Baasday.java" />
+        <option value="$PROJECT_DIR$/src/com/baasday/BasicObject.java" />
+        <option value="$PROJECT_DIR$/src/com/baasday/AuthenticatedUser.java" />
+        <option value="$PROJECT_DIR$/src/com/baasday/Utility.java" />
+        <option value="$PROJECT_DIR$/src/com/baasday/Device.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="3" />
-    <option name="y" value="23" />
+    <option name="x" value="16" />
+    <option name="y" value="22" />
     <option name="width" value="1420" />
     <option name="height" value="860" />
   </component>
@@ -231,34 +259,19 @@
             <id />
           </State>
           <State>
-            <id>Abstraction issues</id>
+            <id>Android Lint</id>
           </State>
           <State>
-            <id>Class structure</id>
+            <id>GPath inspectionsGroovy</id>
           </State>
           <State>
-            <id>Code style issues</id>
+            <id>General</id>
           </State>
           <State>
-            <id>Control flow issues</id>
+            <id>Groovy</id>
           </State>
           <State>
-            <id>Data flow issues</id>
-          </State>
-          <State>
-            <id>Declaration redundancy</id>
-          </State>
-          <State>
-            <id>Imports</id>
-          </State>
-          <State>
-            <id>Inheritance issues</id>
-          </State>
-          <State>
-            <id>Maven</id>
-          </State>
-          <State>
-            <id>Naming conventions</id>
+            <id>Internationalization issues</id>
           </State>
           <State>
             <id>Performance issues</id>
@@ -267,17 +280,9 @@
             <id>Probable bugs</id>
           </State>
           <State>
-            <id>Verbose or redundant code constructs</id>
-          </State>
-          <State>
-            <id>XPath</id>
+            <id>Properties Files</id>
           </State>
         </expanded-state>
-        <selected-state>
-          <State>
-            <id>UnnecessaryLocalVariable</id>
-          </State>
-        </selected-state>
       </profile-state>
     </entry>
   </component>
@@ -307,20 +312,16 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Problems" />
+      </pane>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="baasday" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; Android 2.3.3 Platform &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -353,19 +354,16 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope">
-        <subPane subId="Problems" />
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="preferences.keymap" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -552,8 +550,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="3" y="23" width="1420" height="860" extended-state="0" />
-    <editor active="false" />
+    <frame x="16" y="22" width="1420" height="860" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -568,13 +566,13 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2496361" sideWeight="0.83513516" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2496361" sideWeight="0.83513516" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16486487" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2496361" sideWeight="0.8337838" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969433" sideWeight="0.8337838" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17027026" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -646,39 +644,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/baasday/BaasdayException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="50" selection-start="198" selection-end="202" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/baasday/DeletableObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="40" selection-start="66" selection-end="66" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/baasday/UpdatableObject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="39" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/baasday/Utility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#618#624#0" expanded="true" />
-            <element signature="e#1030#1046#0" expanded="true" />
-            <element signature="e#1344#1352#0" expanded="true" />
-            <element signature="e#1630#1646#0" expanded="true" />
-            <element signature="e#3185#3201#0" expanded="true" />
-            <element signature="e#3700#3708#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -699,13 +668,6 @@
         <state line="25" column="125" selection-start="2762" selection-end="2762" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/baasday/APIClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="59" selection-start="2242" selection-end="2242" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/baasday/Query.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="447" column="20" selection-start="11890" selection-end="11890" vertical-scroll-proportion="0.0">
@@ -713,23 +675,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/baasday/Baasday.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="5" selection-start="1010" selection-end="1010" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/baasday/LeaderboardEntry.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="128" column="43" selection-start="4683" selection-end="4683" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/baasday/BaasdayObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="154" column="8" selection-start="5066" selection-end="5066" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -748,6 +696,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/baasday/BaasdayObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="91" selection-start="1479" selection-end="1479" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/baasday/AuthenticatedUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="104" column="74" selection-start="3911" selection-end="3911" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/baasday/APIClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="59" selection-start="2242" selection-end="2242" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/baasday/Baasday.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="0" selection-start="1668" selection-end="1668" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/baasday/BasicObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="140" column="39" selection-start="4409" selection-end="4409" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/baasday/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="52" column="19" selection-start="1543" selection-end="1543" vertical-scroll-proportion="0.0">
@@ -755,9 +738,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/baasday/AuthenticatedUser.java">
+    <entry file="file://$PROJECT_DIR$/src/com/baasday/Utility.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="27" selection-start="2568" selection-end="2568" vertical-scroll-proportion="0.67899406">
+        <state line="61" column="51" selection-start="2277" selection-end="2277" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#618#624#0" expanded="true" />
+            <element signature="e#1417#1425#0" expanded="true" />
+            <element signature="e#1841#1857#0" expanded="true" />
+            <element signature="e#3242#3258#0" expanded="true" />
+            <element signature="e#3922#3930#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/baasday/Device.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="28" selection-start="261" selection-end="261" vertical-scroll-proportion="0.21770681">
           <folding />
         </state>
       </provider>
@@ -802,7 +799,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>Android 2.3.3 Platform</last-edited>
+          <last-edited>1.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -814,7 +811,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Android|baasday</last-edited>
+          <last-edited>baasday</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

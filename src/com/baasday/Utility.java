@@ -27,43 +27,43 @@ final class Utility {
 
     private static Object fixObjectForJSON(final Object object) {
         if (object == null) {
-            return null;
+            return JSONObject.NULL;
         } else if (object instanceof Map) {
             @SuppressWarnings("unchecked")
             final Map<String, Object> map = (Map<String, Object>) object;
-            final Map<String, Object> result = new HashMap<String, Object>();
+            final JSONObject result = new JSONObject();
             for (final Map.Entry<String, Object> entry : map.entrySet()) {
-                result.put(entry.getKey(), fixObjectForJSON(entry.getValue()));
+                try {
+                    result.put(entry.getKey(), fixObjectForJSON(entry.getValue()));
+                } catch (final JSONException exception) {}
             }
             return result;
         } else if (object instanceof List) {
-            final List<Object> result = new ArrayList<Object>(((List) object).size());
+            final List<Object> fixed = new ArrayList<Object>(((List) object).size());
             for (final Object value : (List) object) {
-                result.add(fixObjectForJSON(value));
+                fixed.add(fixObjectForJSON(value));
             }
-            return result;
+            return new JSONArray(fixed);
+        } else if (object instanceof BasicObject) {
+            return fixObjectForJSON(((BasicObject) object).getValues());
         } else if (object instanceof Date) {
             final Map<String, Object> result = new HashMap<String, Object>();
             result.put("$type", "datetime");
             final Time time = new Time();
             time.set(((Date) object).getTime());
             result.put("$value", time.format3339(false));
-            return result;
+            return fixObjectForJSON(result);
         } else {
             return object;
         }
     }
 
     static String jsonString(final Map<String, Object> values) {
-        final Object fixed = fixObjectForJSON(values);
-        assert(fixed instanceof Map);
-        @SuppressWarnings("unchecked")
-        final Map<String, Object> fixedMap = (Map<String, Object>) fixed;
-        return new JSONObject(fixedMap).toString();
+        return fixObjectForJSON(values).toString();
     }
 
     private static Object fixObjectInJSON(final Object object) throws BaasdayException {
-        if (object == null) {
+        if (object == null || JSONObject.NULL.equals(object)) {
             return null;
         } else if (object instanceof JSONObject) {
             final JSONObject jsonObject = (JSONObject) object;
@@ -82,7 +82,11 @@ final class Utility {
             final Iterator keysIterator = jsonObject.keys();
             while (keysIterator.hasNext()) {
                 final String key = keysIterator.next().toString();
-                result.put(key, fixObjectInJSON(result.get(key)));
+                try {
+                    result.put(key, fixObjectInJSON(jsonObject.get(key)));
+                } catch (final JSONException exception) {
+                    throw new BaasdayException(exception);
+                }
             }
             return result;
         } else if (object instanceof JSONArray) {

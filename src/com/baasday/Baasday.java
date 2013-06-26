@@ -13,6 +13,7 @@ public final class Baasday {
     private static String applicationId;
     private static String apiKey;
     private static String userAuthenticationKey;
+    private static String deviceId;
     private static String apiURLRoot = API_URL_ROOT;
 
     private Baasday() {
@@ -47,6 +48,18 @@ public final class Baasday {
 
     static String getUserAuthenticationKey() {
         return Baasday.userAuthenticationKey;
+    }
+
+    /**
+     * <p>端末IDを設定します。</p>
+     * @param deviceId 端末ID
+     */
+    public static void setDeviceId(final String deviceId) {
+        Baasday.deviceId = deviceId;
+    }
+
+    static String getDeviceId() {
+        return Baasday.deviceId;
     }
 
     static String getVersion() {

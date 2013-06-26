@@ -1,5 +1,7 @@
 package com.baasday;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -23,6 +25,21 @@ public class AuthenticatedUser extends User implements UpdatableObject {
      */
     public String getAuthenticationKey() throws BaasdayException {
         return this.getString("_authenticationKey");
+    }
+
+    public Device getCurrentDevice() throws BaasdayException {
+        final String currentDeviceId = Baasday.getDeviceId();
+        final List<Object> devices = this.getList("_devices");
+        if (devices != null) {
+            for (final Object element : devices) {
+                if (!(element instanceof Map)) continue;
+                @SuppressWarnings("unchecked")
+                final Map<String, Object> deviceValues = (Map<String, Object>) element;
+                final Object deviceId = deviceValues.get("_id");
+                if (deviceId != null && deviceId.equals(currentDeviceId)) return new Device(deviceValues);
+            }
+        }
+        return new Device(Utility.singleEntryMap("_id", (Object) currentDeviceId));
     }
 
     String apiPath() {
@@ -83,5 +100,9 @@ public class AuthenticatedUser extends User implements UpdatableObject {
      */
     public void update(final Map<String, Object> values) throws BaasdayException {
         super.update(values);
+    }
+
+    public void updateDevice(final Device device) throws BaasdayException {
+        this.update(Utility.singleEntryMap("_devices", (Object) Arrays.asList(device)));
     }
 }
