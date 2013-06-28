@@ -6,8 +6,8 @@ import java.util.Map;
 
 /**
  * <p>認証済みのユーザを表すクラスです。ユーザの作成はこのクラスを用いて行います。</p>
- * <p>createメソッドでユーザを作成し、getAuthenticationKeyメソッドが返す認証キーをアプリケーションで保存してください。</p>
- * <p>保存した認証キーを引数にしてBaasday#setUserAuthenticationKeyメソッドを呼び出せば、作成したユーザをfetchメソッドで取得できるようになります。</p>
+ * <p>createメソッドでユーザを作成し、getAuthenticationKeyメソッドが返す認証キーをアプリケーション内に保存してください。</p>
+ * <p>保存した認証キーをBaasday#setUserAuthenticationKeyで設定すれば、作成したユーザをfetchメソッドで取得できるようになります。</p>
  * @see Baasday#setUserAuthenticationKey(String)
  * @see BaasdayObject
  */
@@ -27,8 +27,17 @@ public class AuthenticatedUser extends User implements UpdatableObject {
         return this.getString("_authenticationKey");
     }
 
+    /**
+     * <p>BDBaasdayクラスに設定されている端末IDに対応した端末情報を返します。</p>
+     * <p>端末情報を取得する前にBaasday#setDeviceIdで端末IDを設定する必要があります。詳細はDeviceクラスを参照してください。</p>
+     * <p>端末情報がまだ保存されていない場合は空の端末情報を返します。</p>
+     * @return 端末情報
+     * @throws BaasdayException 端末IDが設定されていない場合
+     * @see Device
+     */
     public Device getCurrentDevice() throws BaasdayException {
         final String currentDeviceId = Baasday.getDeviceId();
+        if (currentDeviceId == null) throw new BaasdayException("no device ID is set on the class Baasday");
         final List<Object> devices = this.getList("_devices");
         if (devices != null) {
             for (final Object element : devices) {
@@ -102,6 +111,11 @@ public class AuthenticatedUser extends User implements UpdatableObject {
         super.update(values);
     }
 
+    /**
+     * <p>端末情報を更新します。</p>
+     * @param device 端末情報
+     * @throws BaasdayException 更新に失敗した場合
+     */
     public void updateDevice(final Device device) throws BaasdayException {
         this.update(Utility.singleEntryMap("_devices", (Object) Arrays.asList(device)));
     }

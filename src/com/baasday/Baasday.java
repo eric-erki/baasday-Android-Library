@@ -3,8 +3,11 @@ package com.baasday;
 /**
  * <p>アプリケーション内でのbaasdayの設定を保持するクラスです。</p>
  * <p>最初にsetupメソッドでアプリケーションIDとAPIキーを設定する必要があります。</p>
- * <p>以前に作成したユーザを取得したり、ユーザを更新する場合はsetUserAuthenticationKeyでユーザの認証キーを設定します。認証キーはユーザの作成時に取得できるので、アプリケーション内で別途保存しておく必要があります。</p>
+ * <p>以前に作成したユーザを取得したり、ユーザを更新する場合はsetUserAuthenticationKeyでユーザの認証キーを設定します。認証キーはユーザの作成時に取得できるので、アプリケーション内に保存しておく必要があります。</p>
+ * <p>Google Cloud Messagingを利用する場合はsetDeviceIdメソッドで端末IDを設定し、Deviceクラスを利用可能にする必要があります。</p>
+ * <p>端末IDの詳細はDeviceクラスを参照してください。</p>
  * @see AuthenticatedUser
+ * @see Device
  */
 public final class Baasday {
     private static final String API_URL_ROOT = "https://baasday.com/api/";
@@ -53,6 +56,7 @@ public final class Baasday {
     /**
      * <p>端末IDを設定します。</p>
      * @param deviceId 端末ID
+     * @see Device
      */
     public static void setDeviceId(final String deviceId) {
         Baasday.deviceId = deviceId;
